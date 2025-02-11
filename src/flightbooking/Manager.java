@@ -82,6 +82,7 @@ public class Manager {
         if (flight.bookASeat()) {
             tickets.add(new Ticket(p, flight, p.applyDiscount(flight.getOriginalPrice())));
             System.out.println("Booking successful.");
+            System.out.println("Final Ticket Price: $" + tickets.get(tickets.size() - 1).getPrice());
         } else {
             System.out.println("Booking failed: No seats available on this flight.");
         }
