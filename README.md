@@ -1,12 +1,31 @@
 # ✈️ Flight Booking System
 
-##  Overview
-The **Flight Booking System** is a Java-based console application that simulates an airline ticket booking system.  
-It allows passengers to book flights, applies discounts based on membership status, and displays available flights.
+## 📌 Overview
+This **Flight Booking System** is a Java-based console application that allows passengers to book airline tickets,  
+applies different discount policies based on membership status, and prevents overbooking.  
 
+This project was built using **Java**, leveraging **Object-Oriented Programming (OOP) principles**, including:  
+- **Encapsulation** – Private attributes with getter and setter methods.  
+- **Inheritance** – The `Passenger` superclass with `Member` and `NonMember` subclasses.  
+- **Polymorphism** – The `applyDiscount()` method is overridden in each subclass.  
+- **Abstraction** – `Passenger` is an abstract class requiring subclasses to define `applyDiscount()`.  
+
+### 🔍 **Testing Approach**
+This project includes **unit tests using JUnit** to validate key functionalities.  
+Some of the key tests implemented:
+- **Flight Class Tests:**
+  - Ensures a **flight cannot be created** with the same origin and destination.
+  - Verifies that **booking a seat decreases available seats**.
+- **Passenger & Discount Tests:**
+  - Tests that **Members receive the correct discount** based on membership years.
+  - Ensures that **NonMembers over 65 get a 10% discount**.
+- **Integration Tests:**
+  - Simulates the **full booking process** and verifies final ticket prices.
+
+JUnit was used to verify that methods function correctly and **edge cases (like overbooking) are handled properly**.
 ---
 
-##  Features
+## 🚀 Features
 -  **Flight Management** – Create and display flights.
 -  **Ticket Booking** – Allows passengers to book available flights.
 -  **Discount Application** –  
