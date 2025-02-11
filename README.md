@@ -18,7 +18,7 @@ It allows passengers to book flights, applies discounts based on membership stat
 -  **Handles Full Flights** – Prevents overbooking.
 -  **JUnit Tests** – Ensures correct functionality.
 
----
+
 ## 📊 Sample Output
 ```sh
 Available flights from Chicago to Houston:
@@ -39,6 +39,8 @@ Booked Tickets:
 Ticket #1: Passenger: Alice, Flight 2003, Chicago to Houston, 09/10/2023 2:00 pm, Original Price: $300.00, Final Price: $150.00
 Ticket #2: Passenger: Bob, Flight 2003, Chicago to Houston, 09/10/2023 2:00 pm, Original Price: $300.00, Final Price: $270.00
 
+```
+---
 ## 📚 Lessons Learned & Challenges
 
 ### ✅ What Was Learned:
