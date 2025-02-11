@@ -38,3 +38,50 @@ Booking failed. No seats available.
 Booked Tickets:
 Ticket #1: Passenger: Alice, Flight 2003, Chicago to Houston, 09/10/2023 2:00 pm, Original Price: $300.00, Final Price: $150.00
 Ticket #2: Passenger: Bob, Flight 2003, Chicago to Houston, 09/10/2023 2:00 pm, Original Price: $300.00, Final Price: $270.00
+
+## 📚 Lessons Learned & Challenges
+
+### ✅ What Was Learned:
+- **Object-Oriented Programming (OOP)**  
+  - Applied **inheritance** with `Passenger`, `Member`, and `NonMember` classes.  
+  - Used **polymorphism** to apply different discounts dynamically.  
+  - Implemented **encapsulation** by keeping attributes `private` and using getters/setters.  
+
+- **Java Collections & Data Structures**  
+  - Used an **array (`Flight[]`)** to store flights.  
+  - Used an **`ArrayList<Ticket>`** to manage booked tickets dynamically.  
+
+- **Exception Handling & Validation**  
+  - Prevented invalid flights where `origin == destination`.  
+  - Ensured a **flight cannot be overbooked** (booking fails if `numberOfSeatsLeft == 0`).  
+
+- **JUnit Testing**  
+  - Created unit tests for the `Flight` class to check constructor validation and seat booking behavior.  
+  - Verified **discount logic** in tests to ensure correct pricing.  
+
+---
+
+### ⚠️ Challenges Faced:
+
+1. **Managing Ticket Numbers**  
+   - **Issue:** Each ticket needed a **unique ticket number**, but it had to be assigned dynamically.  
+   - **Solution:** Used a **static counter (`numTickets`)** in `Ticket.java` to automatically generate **incremental ticket numbers**.  
+
+2. **Applying Discounts Correctly**  
+   - **Issue:** Discounts weren’t initially applied properly because `applyDiscount()` wasn’t called before creating the ticket.  
+   - **Solution:** Made sure to call `applyDiscount(flight.getOriginalPrice())` inside `Manager.bookSeat()`.  
+
+3. **Handling Flight Overbooking**  
+   - **Issue:** The system originally allowed more passengers to book than available seats.  
+   - **Solution:** Checked `numberOfSeatsLeft > 0` before booking a seat and displayed `"Booking failed. No seats available."` when necessary.  
+
+4. **Formatting Output Properly**  
+   - **Issue:** The ticket output was unclear when printing the final ticket price.  
+   - **Solution:** Improved **`toString()` formatting** in `Ticket.java` and added `"Final Ticket Price: $"` print statements after each booking.  
+
+---
+
+## 🎯 Future Learning Goals:
+- Learn how to **integrate a database (MySQL)** for persistent flight and booking storage.  
+- Implement a **GUI (JavaFX or Swing)** for a better user experience.  
+- Expand the system to support **cancellations and refunds**.  
