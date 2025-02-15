@@ -1,6 +1,6 @@
 # ✈️ Flight Booking System
 
-## 📌 Overview
+##  Overview
 This **Flight Booking System** is a Java-based console application that allows passengers to book airline tickets,  
 applies different discount policies based on membership status, and prevents overbooking.  
 
@@ -25,7 +25,7 @@ Some of the key tests implemented:
 JUnit was used to verify that methods function correctly and **edge cases (like overbooking) are handled properly**.
 ---
 
-## 🚀 Features
+##  Features
 -  **Flight Management** – Create and display flights.
 -  **Ticket Booking** – Allows passengers to book available flights.
 -  **Discount Application** –  
@@ -38,7 +38,7 @@ JUnit was used to verify that methods function correctly and **edge cases (like 
 -  **JUnit Tests** – Ensures correct functionality.
 
 
-## 📊 Sample Output
+##  Sample Output
 ```sh
 Available flights from Chicago to Houston:
 Flight 2003, Chicago to Houston, 09/10/2023 2:00 pm, original price: $300.00
@@ -60,9 +60,9 @@ Ticket #2: Passenger: Bob, Flight 2003, Chicago to Houston, 09/10/2023 2:00 pm, 
 
 ```
 ---
-## 📚 Lessons Learned & Challenges
+##  Lessons Learned & Challenges
 
-### ✅ What Was Learned:
+###  What Was Learned:
 - **Object-Oriented Programming (OOP)**  
   - Applied **inheritance** with `Passenger`, `Member`, and `NonMember` classes.  
   - Used **polymorphism** to apply different discounts dynamically.  
@@ -82,7 +82,7 @@ Ticket #2: Passenger: Bob, Flight 2003, Chicago to Houston, 09/10/2023 2:00 pm, 
 
 ---
 
-### ⚠️ Challenges Faced:
+### ⚠Challenges Faced:
 
 1. **Managing Ticket Numbers**  
    - **Issue:** Each ticket needed a **unique ticket number**, but it had to be assigned dynamically.  
@@ -102,7 +102,7 @@ Ticket #2: Passenger: Bob, Flight 2003, Chicago to Houston, 09/10/2023 2:00 pm, 
 
 ---
 
-## 🎯 Future Learning Goals:
+##  Future Learning Goals:
 - Learn how to **integrate a database (MySQL)** for persistent flight and booking storage.  
 - Implement a **GUI (JavaFX or Swing)** for a better user experience.  
 - Expand the system to support **cancellations and refunds**.  
