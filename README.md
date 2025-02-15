@@ -82,7 +82,7 @@ Ticket #2: Passenger: Bob, Flight 2003, Chicago to Houston, 09/10/2023 2:00 pm, 
 
 ---
 
-### ⚠Challenges Faced:
+### Challenges Faced:
 
 1. **Managing Ticket Numbers**  
    - **Issue:** Each ticket needed a **unique ticket number**, but it had to be assigned dynamically.  
