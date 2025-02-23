@@ -10,7 +10,7 @@ This project was built using **Java**, leveraging **Object-Oriented Programming 
 - **Polymorphism** – The `applyDiscount()` method is overridden in each subclass.  
 - **Abstraction** – `Passenger` is an abstract class requiring subclasses to define `applyDiscount()`.  
 
-### 🔍 **Testing Approach**
+### **Testing Approach**
 This project includes **unit tests using JUnit** to validate key functionalities.  
 Some of the key tests implemented:
 - **Flight Class Tests:**
